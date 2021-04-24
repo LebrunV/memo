@@ -144,3 +144,8 @@
 # - Examiner les modification faites sur un fichier
 
     git blame <NOM FICHIER>
+
+# - Merger 2 branches
+
+    git merge <NOM BRANCHE MERGEE>
+
