@@ -1,0 +1,23 @@
+# - Configuration du nom et de l'adresse mail
+	
+	git config --global user.name "Lebrun Vincent"
+
+    git config --global user.email lebrunv@mail.be
+	
+# - Vérifier les paramétres
+    
+	git config --list
+	
+# - Configurer les couleurs
+
+	git config --global color.diff auto
+	
+	git config --global color.status auto
+	
+	git config --global color.branch auto
+	
+# - Configurez l'éditeur	
+
+    git config --global core.editor 
+	
+	git config --global merge.tool 
