@@ -21,3 +21,40 @@
     git config --global core.editor "code --wait"
 	
 	git config --global merge.tool tortoisemerge
+
+# - Initialiser un dépot
+   
+     git init
+
+# - Indexer un fichier
+     
+	 git add <Nom Fichier>
+
+# - Commiter un fichier
+
+    git commit -m "message du commit"
+
+# - Relier votre depot local au depot distant
+    
+	git remote add origin <url repo distant>
+
+	git branch -M main
+
+# - pusher vers le répertoire distant
+    
+	git push -u origin main
+
+# - Accédez à un dépot distant
+   
+    git init
+
+	git remote add ALIAS <url>
+
+	git branch -M main
+
+# - Copiez le dépot en local
+
+    git pull ALIAS main
+
+	
+
