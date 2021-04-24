@@ -56,5 +56,91 @@
 
     git pull ALIAS main
 
-	
+# - Créez une branche
+  
+    git branch <NOM DE LA BRANCHE>
 
+# - Listez les branches
+
+    git branch
+
+# - Changer de branche
+   
+    git checkout <NOM DE LA BRANCHE>
+
+# - Fusionner 2 branches
+
+    Cette commande doit être effectuée à partir de la branche dans laquelle nous voulons apporter des modifications
+
+	git checkout main
+
+	git merge <NOM DE LA BRANCHE>
+
+
+# - Supprimer une branche que l'on vient de créer
+    
+    git branch -D <NOM BRANCHE>
+
+# - Status des fichiers
+  
+    git status
+
+# - Créez une remise
+
+   git stash
+
+# - Appliquer une remise sur une branche
+     
+	Ce mettre sur la branche sur laquelle on veut déposer la reprise 
+   
+    git statsh apply
+
+# - Liste des remises
+
+    git stash apply <IDSTATSH>
+
+# - Lister les commits
+
+    git log commit
+
+# - supprimer le dernier commit sur une branche
+
+    git reset  --hard HEAD^
+
+# - Réappliquer le commit supprimer sur la bonne branche
+   
+    git reset --hard <IDCOMMIT>
+
+# - Modifier le message du dernier commit
+    
+	git commit --amend -m "Votre nouveau message de commit"
+
+# - Ajouter un fichier au dernier commit
+
+	git add <NOM FICHIER> 
+
+	git commit --amend --no-edit
+
+# - Annuler le dernier commit public
+
+	git revert HEAD^
+
+# - Annuler des changemnts non commité
+
+    git reset HEAD
+
+# - Générer une paire de clefs SSH
+  
+    ssh-keygen -t rsa -b 4096 -C "lebrunv@mail.be"
+
+# - Revenir a un commit antérieur en supprimant toutes les modifications faites apres lui
+   
+    git reset commitid --hard
+
+# - Logger toutes les modifications
+  
+    git reflog
+
+# - Examiner les modification faites sur un fichier
+
+    git blame <NOM FICHIER>
